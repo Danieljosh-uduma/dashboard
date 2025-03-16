@@ -1,0 +1,88 @@
+.navbar {
+    width: 80px;
+    height: 100vh;
+    background-color: var(--navbar-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0;
+    align-items: center;
+
+    img {
+        width: 23px;
+        fill: white;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+    #logo {
+        position: relative;
+    }
+    #logo:hover::after {
+        content: attr(data-after);
+        background-color: var(--bg-color);
+        padding: 4px 8px;
+        box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.8);
+        color: var(--white);
+        font-size: 0.8rem;
+        border-radius: 4px;
+        position: absolute;
+        top: 0;
+        left: 45px;
+        width: 70px;
+    } 
+
+    .navlist > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        li {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border-radius: 50px;
+        }
+        li:active>img {
+            transform: scale(0.7);
+        }
+        li:hover {
+            background-color: var(--bg-color);
+        }
+        li:hover::after {
+            content: attr(data-after);
+            background-color: var(--bg-color);
+            padding: 4px 8px;
+            box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.8);
+            font-size: 0.8rem;
+            border-radius: 4px;
+            position: absolute;
+            top: 0;
+            left: 45px;
+        }
+    }
+    button {
+        position: relative;
+    }
+    button:hover::after {
+        content: 'Logout';
+        background-color: var(--bg-color);
+        padding: 4px 8px;
+        box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.8);
+        color: var(--white);
+        font-size: 0.8rem;
+        border-radius: 4px;
+        position: absolute;
+        top: 0;
+        left: 35px;
+        width: 70px;
+    }
+
+}
