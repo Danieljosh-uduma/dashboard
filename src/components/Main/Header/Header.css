@@ -1,0 +1,70 @@
+header {
+    padding: 20px 40px 0;
+    border-bottom: 1px solid var(--gray);
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        margin-bottom: 40px;
+
+        .info {
+            display: flex;
+            height: 20px;
+            align-items: center;
+            gap: 15px;
+
+            .date {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+            .profile {
+                border-radius: 50px;
+            }
+        }
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            display: flex;
+            gap: 10px;
+        }
+        figure {
+            display: flex;
+            gap: 10px;
+            margin-right: 20px;
+            padding: 0 20px 15px;
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .add-view {
+            padding: 0 20px 15px;
+        }
+        .active-view {
+            position: relative;
+            bottom: -1spx;
+            border-bottom: 2px solid var(--text-color);
+        }
+        button {
+           background-color: var(--blue); 
+           color: var(--white);
+           font-size: 0.875rem;
+           font-weight: 600;
+           padding: 10px 20px;
+           margin-bottom: 10px;
+           border-radius: 30px;
+        }
+        button:active {
+            transform: scale(0.87);
+        }
+
+    }
+
+}

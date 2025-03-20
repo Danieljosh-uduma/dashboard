@@ -12,14 +12,15 @@
   --blue: #4B69FF;
   --toggle: rgba(255, 255, 255, 0.04);
   --toggle-color: rgba(255, 255, 255, 0.06);
+  color: var(--text-color);
 }
 
 [data-theme='light'] {
   --bg-color: #ffffff;
   --sidebar-bg: #ffffff;
   --bg-component: rgb(169, 166, 166);
-  --toggle: rgba(28, 29, 34, 0.04);
-  --toggle-color: white;
+  --toggle: rgba(28, 29, 34, 0.09);
+  --toggle-color: rgba(28, 29, 34, 0.09);;
   --text-color: black;
 }
 
@@ -35,7 +36,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   font-family: Exo, sans-serif;
 }
 
@@ -44,7 +45,6 @@ body {
   min-width: 320px;
   max-width: 100%;
   max-height: 100vh;
-  color: var(--white);
 }
 
 button {
