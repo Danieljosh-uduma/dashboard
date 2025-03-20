@@ -28,16 +28,16 @@ function Trend() {
         setTaskForm(prev => !prev)
     }
 
-    // function changeTask() {
-    //     setTasks(prev => prev )
-    // }
+    function changeTask() {
+        setTasks(prev => prev )
+    }
     return (
         <section className='trend'>
             <div className="head">
                 <h4>To do (4)</h4>
                 <span onClick={addTask}>Add new task</span>
             </div>
-            <div className="tasks">
+            <div className="tasks" onClick={changeTask}>
                 {taskForm && <TaskForm /> }
                 {tasks.length > 0? 
                     tasks.map((task)=> <Task key={task} />)
