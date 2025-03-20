@@ -21,8 +21,8 @@ export default function Main() {
 }
 
 function Trend() {
-    const [tasks, setTasks] = useState([1,2, 3, 4, 5, 6, 7, 8])
-    const [taskForm, setTaskForm] = useState(true)
+    const [tasks, setTasks] = useState<number[]>([1,2, 3, 4, 5, 6, 7, 8])
+    const [taskForm, setTaskForm] = useState<boolean>(false)
 
     function addTask() {
         setTaskForm(prev => !prev)
