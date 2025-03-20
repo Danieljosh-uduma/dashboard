@@ -1,9 +1,9 @@
 import Header from './Header/Header'
 import { useState } from 'react'
-import MoreInfoImg from '../../assets/images/more-info.svg'
-import PrOfileOneImg from '../../assets/images/profile1.svg'
-import PrOfileTwoImg from '../../assets/images/profile2.svg'
-import ProgressImg from '../../assets/images/progress.svg'
+import MoreInfoImg from '/src/assets/images/more-info.svg'
+import PrOfileOneImg from '/src/assets/images/profile1.svg'
+import PrOfileTwoImg from '/src/assets/images/profile2.svg'
+import ProgressImg from '/src/assets/images/progress.svg'
 import './Main.css'
 
 
