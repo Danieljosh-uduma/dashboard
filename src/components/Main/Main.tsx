@@ -28,9 +28,9 @@ function Trend() {
         setTaskForm(prev => !prev)
     }
 
-    function changeTask() {
-        setTasks(prev => prev )
-    }
+    // function changeTask() {
+    //     setTasks(prev => prev )
+    // }
     return (
         <section className='trend'>
             <div className="head">
@@ -87,9 +87,9 @@ function Task() {
 }
 
 function TaskForm() {
-    function addNewTask() {
-        console.log('add new task')
-    }
+    // function addNewTask() {
+    //     console.log('add new task')
+    // }
     return (
         <div className="task-form">
             <h3>New task</h3>
